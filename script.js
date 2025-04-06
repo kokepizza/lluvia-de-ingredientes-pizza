@@ -8,6 +8,7 @@ canvas.height = window.innerHeight;
 let mouseX = 0;
 let mouseY = 0;
 let isMouseDown = false;
+let hasMouseMoved = false;
 
 // Arreglo para almacenar los emojis activos
 const fallingEmojis = [];
@@ -274,7 +275,7 @@ function animate(timestamp) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         
         // Crear emojis si el mouse está presionado y no hay explosión activa
-        if (!explosionActive) {
+        if (!explosionActive && hasMouseMoved) {
             if (isMouseDown) {
                 // Limitar la creación de emojis
                 const emojisToCreate = Math.min(3, maxFallingEmojis - fallingEmojis.length);
@@ -304,6 +305,8 @@ function animate(timestamp) {
 canvas.addEventListener('mousemove', (event) => {
     mouseX = event.clientX;
     mouseY = event.clientY;
+
+    hasMouseMoved = !hasMouseMoved ? true : hasMouseMoved;
 });
 
 canvas.addEventListener('mousedown', () => {

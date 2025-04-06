@@ -7,7 +7,8 @@ body {
 
 canvas {
     display: block;
-    cursor: none;
+   /* cursor: none; */
+cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"><text y="60" font-size="80">🍕</text></svg>') 40 40, auto;
 }
 
 .instructions {
