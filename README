@@ -1,0 +1,23 @@
+# Pizza Ingredient Rain Game
+
+Welcome to the **Pizza Ingredient Rain Game**! This is a fun and interactive game where pizza ingredients (emojis) fall from the sky, and you can interact with them using your mouse.
+
+## Features
+
+- 🍕 **Pizza-themed emojis**: Watch ingredients like cheese, tomatoes, mushrooms, and more rain down.
+- 🖱️ **Mouse interaction**: Move your mouse to control the falling ingredients.
+- 🎮 **Dynamic gameplay**: Emojis accumulate and interact with the canvas environment.
+- 🐉 **Custom cursor**: A fun emoji cursor adds a playful touch to the game.
+
+## How to Play
+
+1. Open the game in your browser.
+2. Move your mouse to start the rain of pizza ingredients.
+3. Click and drag to interact with the falling emojis.
+4. Watch as the ingredients pile up and create a pizza-themed chaos!
+
+## Installation
+
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/lluvia-de-ingredientes-pizza.git
